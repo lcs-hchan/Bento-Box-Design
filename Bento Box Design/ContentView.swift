@@ -54,6 +54,8 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 20 )
                                 .fill(mediumGray)
                                 .frame(height:100)
+                           
+                            
                             
                             VStack {
                                 Image("Image 2")
@@ -71,13 +73,38 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(mediumGray)
                                 .frame(height:100)
+                            VStack {
+                                Text("Up to")
+                                    .foregroundStyle(.black)
+                                Spacer()
+                                Text("20%")
+                                    .font(.system(size:30))
+                                Spacer()
+                                Text("faster CPU")
+                                    .foregroundStyle(.black)
+                            }
+                            
                             
                         }
 
                     }
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(mediumGray)
-                        .frame(height: 125)
+                            ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(mediumGray)
+                            .frame(height: 125)
+                                VStack {
+                                    Text("Over")
+                                    Text("67 billion")
+                                    Text("transistors")
+                                }
+                            
+                            
+                            
+                            
+                           
+                        }
+                    
+                    
                     HStack{
                         RoundedRectangle(cornerRadius: 20)
                             .fill(mediumGray)
@@ -90,8 +117,12 @@ struct ContentView: View {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(mediumGray)
                             .frame(height:75)
-                        Text("High-Performance                     media engine with ProRes")
-                            .foregroundStyle(.black)
+                        VStack {
+                            Text("High-Performance")
+                                .foregroundStyle(.black)
+                            Text("media engine with ProRes")
+                                .foregroundStyle(.black)
+                        }
                         
                     }
                     
@@ -157,10 +188,15 @@ struct ContentView: View {
                                 RoundedRectangle(cornerRadius: 20)
                                     .fill (mediumGray)
                                     .frame(height: 185)
-                                Image("Image 1")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 150)
+                                VStack {
+                                    Image("Image 1")
+                                        .resizable()
+                                        .scaledToFit()
+                                    .frame(height: 100)
+                                    .padding()
+                                    
+                                    Spacer()
+                                }
                                 
                                 
                             }
