@@ -1,4 +1,3 @@
-//
 //  ContentView.swift
 //  Bento Box Design
 //
@@ -54,6 +53,7 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 20 )
                                 .fill(mediumGray)
                                 .frame(height:100)
+                                .frame(width:125)
                            
                             
                             
@@ -73,6 +73,8 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(mediumGray)
                                 .frame(height:100)
+                                .frame(width:125)
+                            
                             VStack {
                                 Text("Up to")
                                     .foregroundStyle(.black)
@@ -99,19 +101,35 @@ struct ContentView: View {
                                 }
                             
                             
-                            
-                            
                            
                         }
                     
                     
                     HStack{
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(mediumGray)
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(mediumGray)
+                                .frame(height:100)
+                            VStack {
+                                Text("16-core")
+                                Text("Neural")
+                                Text("Engine")
+                                Text("15.8 trillion people")
+                            }
+                        }
+                        
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(mediumGray)
                             .frame(height:100)
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(mediumGray)
-                            .frame(height:100)
+                            VStack{
+                            
+                                Text("40%")
+                                Text("Faster Neural Engine")
+                                
+                            }
+                            
+                        }
                     }
                     ZStack{
                         RoundedRectangle(cornerRadius: 20)
@@ -138,14 +156,30 @@ struct ContentView: View {
                                 .fill(mediumGray)
                                 .frame(height: 100)
                                 .frame(width: 100)
-                            
+                            VStack {
+                                Text("Up to")
+                                    .foregroundStyle(.black)
+                                Spacer()
+                                Text("30%")
+                                    .foregroundStyle(.purple)
+                                    .font(.system(size:30))
+                                Spacer()
+                                Text("faster GPU")
+                                    .foregroundColor(.black)
+                            }
                         }
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(mediumGray)
                                 .frame(height:100)
-                            Text("Industry-leading performance per watt")
-                                .foregroundStyle(.purple)
+                            VStack{
+                                Text("Industry-leading")
+                                    .foregroundColor(.purple)
+                                Text("performance")
+                                    .foregroundColor(.purple)
+                                Text("per watt")
+                                    .foregroundStyle(.purple)
+                            }
                                 
                         }
                         
@@ -155,24 +189,36 @@ struct ContentView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(mediumGray)
-                            .frame(height:230)
+                            .frame(height:236)
                         
                         // Chip
                         ZStack {
                             Rectangle()
                                 .fill(.black)
-                        
-                            Text(" M2")
-                                .foregroundStyle(.white)
+                            VStack{
+                                Text(" M2")
+                                    .foregroundStyle(.white)
+                                    .font(.system(size: 45))
+                                Text("Max")
+                                    .foregroundColor(.purple)
+                                    .font(.system(size: 30))
+                            }
                         }
-                        .frame(width: 150, height: 150)
+                        .frame(width: 170, height: 170)
                         
                     }
                     
                     // Bottom row
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(mediumGray)
-                        .frame(height: 75)
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(mediumGray)
+                            .frame(height: 75)
+                        VStack{
+                            Text("Second generation")
+                            Text("5nm technology")
+                        }
+                        
+                    }
                 }
                 VStack{
                     ZStack{
@@ -180,6 +226,19 @@ struct ContentView: View {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(mediumGray)
                             .frame(height:100)
+                        VStack {
+                            Text("Up to")
+                                .foregroundColor(.black)
+                            Spacer()
+                            Text("96GB")
+                                .foregroundColor(.purple)
+                                .font(.system(size: 45))
+                            
+                            Spacer()
+                            Text("LPDDR5 memory")
+                                .foregroundColor(.black)
+                            
+                        }
                             
                     }
                  
@@ -195,7 +254,7 @@ struct ContentView: View {
                                     .frame(height: 100)
                                     .padding()
                                     
-                                    Spacer()
+                                   
                                 }
                                 
                                 
@@ -223,4 +282,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
