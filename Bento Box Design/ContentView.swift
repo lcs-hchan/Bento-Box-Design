@@ -78,13 +78,16 @@ struct ContentView: View {
                             VStack {
                                 Text("Up to")
                                     .foregroundStyle(.black)
+                                    .font(.system(size:10))
                                 Spacer()
                                 Text("20%")
-                                    .font(.system(size:30))
+                                    .font(.system(size:35))
                                     .foregroundColor(.purple)
                                 Spacer()
                                 Text("faster CPU")
                                     .foregroundStyle(.black)
+                                    .font(.system(size:10))
+                                    
                             }
                             
                             
@@ -121,7 +124,7 @@ struct ContentView: View {
                                 Text("Neural Engine")
                                     .foregroundColor(.purple)
                                     .font(.system(size: 25))
-                                Text("15.8 trillion people")
+                                Text("15.8 trillion ops/s")
                                     .foregroundColor(.black)
                             }
                             
@@ -136,10 +139,12 @@ struct ContentView: View {
                                 Text("40%")
                                     .foregroundColor(.purple)
                                     .font(.system(size: 30))
-                                    
-                                
+                               
+                                   
                                 Text("Faster Neural Engine")
                                     .foregroundColor(.black)
+                                    .font(.system(size: 12))
+                                    
                                 
                             }
                             
@@ -175,13 +180,15 @@ struct ContentView: View {
                             VStack {
                                 Text("Up to")
                                     .foregroundStyle(.black)
+                                    .font(.system(size:10))
                                 Spacer()
                                 Text("30%")
                                     .foregroundStyle(.purple)
-                                    .font(.system(size:30))
+                                    .font(.system(size:35))
                                 Spacer()
                                 Text("faster GPU")
                                     .foregroundColor(.black)
+                                    .font(.system(size:10))
                             }
                         }
                         ZStack{
@@ -287,10 +294,27 @@ struct ContentView: View {
                                 
                             }
                                 
-                                
+                            ZStack{
                                 RoundedRectangle(cornerRadius: 20)
                                     .fill (mediumGray)
                                     .frame(height: 185)
+                                VStack{
+                                    Image("Image")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 100)
+                                        .padding()
+                                    Text("Up to")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 10))
+                                    Text("38-core")
+                                        .foregroundColor(.purple)
+                                        .font(.system(size: 20))
+                                    Text("CPU")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 10))
+                                }
+                            }
                                 
                             
                         
