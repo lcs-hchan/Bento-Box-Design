@@ -82,7 +82,7 @@ struct ContentView: View {
                                 Spacer()
                                 Text("20%")
                                     .font(.system(size:35))
-                                    .foregroundColor(.purple)
+                                    .foregroundStyle(.purple)
                                 Spacer()
                                 Text("faster CPU")
                                     .foregroundStyle(.black)
